@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#widget_3{
+	background-color: qlineargradient(x0:0, y1:0,x0:1, y2:1, stop:0 rgb(20, 32, 44), stop:1 rgb(37, 85, 117));
+	border-radius:20px  
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 25 20pt &quot;微软雅黑 Light&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>工厂RFID管理系统</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,4">
+         <item>
+          <widget class="QListWidget" name="listWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>147</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>207</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QListView {
+	border:none;
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QListView::item{
+background-color: transparent;
+height:40px;
+padding-left:4px;
+
+}
+QListView::item:hover {
+	background-color:  transparent;
+	color: rgba(43, 162, 238,150);
+
+
+
+}
+QListView::item:selected {
+	/*background-color: transparent;*/
+background-color:  transparent;
+	color: rgb(43, 162, 238);
+
+
+}
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>工厂主页</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/img/buttom_white/首页_home.svg</normaloff>:/img/buttom_white/首页_home.svg</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>数据展示台</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/img/buttom_white/数据_data-three.svg</normaloff>:/img/buttom_white/数据_data-three.svg</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>数据查询</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/img/buttom_white/放大_zoom-in.svg</normaloff>:/img/buttom_white/放大_zoom-in.svg</iconset>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="stackedWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>4</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>551</width>
+             <height>381</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(40, 91, 126, 100);
+border-radius:12px ;
+
+	</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page">
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>120</y>
+               <width>221</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>工厂主页（page1）</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_2">
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>160</x>
+               <y>110</y>
+               <width>211</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>数据展示台page2</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_3">
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>100</y>
+               <width>141</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>查询page3</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="edition">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 8pt ;</string>
+         </property>
+         <property name="text">
+          <string>版本号:1.0.0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>742</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

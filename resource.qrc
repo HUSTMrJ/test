@@ -1,0 +1,7 @@
+<RCC>
+  <qresource>
+    <file>buttom/首页_home.svg</file>
+    <file>buttom/数据_data-three.svg</file>
+    <file>buttom/放大_zoom-in.svg</file>
+  </qresource>
+</RCC>
